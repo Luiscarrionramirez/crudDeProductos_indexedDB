@@ -1,0 +1,335 @@
+* {
+   padding: 0 ;
+   margin: 0 ;
+   transition: all 300ms;
+}
+
+
+body {
+   background-color: #cff4d2ad;
+   text-align: center ;
+}
+
+.container-all {
+   margin: 70px auto;
+   background-color: #205072 ;
+   max-width: 80% ;
+   padding: 50px ;
+   border-radius: 20px;
+}
+
+.container-add {
+   display: flex ;
+   justify-content: space-around;
+   padding-top: 30px ;
+}
+
+.btn-add_main {
+   padding: 10px ;
+   border: none ;
+   background-color: #9d3232;
+   box-shadow: 1px 1px 5px #000000b9 ;
+   border-radius: 10px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 25px ;
+   color: #cff4d2;
+   cursor: pointer ;
+   font-weight: bold ;
+}
+
+.btn-add_main:hover {
+   background-color: #7e2929 ;
+}
+
+.elementos {
+   color: #cff4d2 ;
+   font-family: 'Poppins', sans-serif;
+   padding: 10px ;
+   font-size: 25px ;
+   font-weight: bold;
+}
+
+.elementos span {
+   display: inline-block ;
+   color: black ;
+   font-size: 33px ;
+   background-color: #cff4d2;
+   padding: 5px 15px ;
+   border-radius: 10px ;
+}
+
+
+.title {
+   font-family: 'Poppins', sans-serif;
+   color: #cff4d2;
+   padding: 30px ;
+   font-size: 40px ;
+   text-shadow: 2px 2px 5px #000000b9 ;
+}
+
+.crud-container {
+   background-color: #329d9c;
+   max-width: 90% ;
+   margin: auto ;
+   border-radius: 20px;
+   padding: 30px;
+}
+
+.addNombres {
+   margin-top: 40px ;
+   padding: 30px ;
+   display: none ;
+}
+
+.show {
+   display: block ;
+}
+
+.inputs {
+   display: flex ;
+   flex-wrap: wrap;
+   justify-content: space-evenly ;
+}
+
+.add-child {
+   border: none;
+   border-radius: 10px ;
+   padding: 20px;
+   margin: 10px;
+   font-family: 'Poppins';
+   min-width: 25%  ;
+}
+
+.name {
+   font-size: 15px ;
+}
+
+.name::placeholder {
+   font-size: 15px ;
+   color: black;
+}
+
+.precio::placeholder {
+   font-size: 15px ;
+   color: black;
+}
+
+
+.cantidad::placeholder {
+   font-size: 15px ;
+   color: black;
+}
+
+.btn-add {
+   min-width: 50%  ;
+   background-color: #205072;
+   box-shadow: 1px 1px 5px #000000b9 ;
+   font-size: 15px ;
+   color: #cff4d2;
+   cursor: pointer;
+}
+
+.btn-add:hover {
+   background-color: #3883b9 ;
+}
+
+.nombres {
+   max-width: 100% ;
+   margin: 40px 0 ;
+}
+
+.titles {
+   display: flex ;
+   justify-content: space-between;
+   align-items: center ;
+   max-width: 95%  ;
+   margin: 40px auto ;
+   border-radius: 10px ;
+   padding: 20px 0px ;
+   background-color: #1d7574;
+   box-shadow: 1px 1px 2px #000000b9 ;
+}
+
+.titles h2 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px ;
+   color: #cff4d2;
+   padding: 0  15px ;
+}
+
+.producto {
+   display: flex ;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #56c596;
+   padding: 10px 0px ;
+   margin: 3px auto ;
+   border-radius: 10px ;
+   box-shadow: 1px 1px 2px #000000b9 ;
+   max-width: 95%  ;
+}
+
+.producto > * {
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px ;
+   color: #205072;
+   padding: 0  10px ;
+   font-weight: bold;
+   max-width: 100px;
+
+}
+
+
+.producto:nth-child(even) {
+	background-color: #7be495 ;
+}
+
+
+
+.options {
+   display: flex ;
+   justify-self: end;
+}
+
+.options button {
+   margin: 4px 4px  ;
+   outline: none ;
+   padding: 7px 7px ;
+   border-radius: 10px;
+   cursor: pointer ;
+   box-shadow: 1px 1px 2px #000000b9 ;
+   color: #cff4d2;
+   font-weight: 900 ;
+}
+
+.delete, 
+.imposible {
+   border: none ;
+   background-color: #9d3232;
+   color: #cff4d2;
+   font-size: 30px  ;
+}
+
+.delete:hover {
+   background-color: #7e2929 ;
+}
+
+.imposible {
+   background-color: #205072;
+}
+
+.posible {
+   border: none ;
+   background-color: #3883b9;
+   border: 1px solid #cff4d2;
+   color: #cff4d2;
+   font-size: 30px  ;
+}
+
+.posible:hover {
+   background-color: #1d7574;
+}
+
+.nombre h2 {
+   padding: 6px ;
+   font-family: sans-serif ;
+   color: rgb(32, 105, 107);
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+   .titles h2 {
+      font-size: 15px ;
+      padding: 0  10px ;
+   }
+
+   .producto > * {
+      font-size: 15px ;
+   }
+
+   .options button {
+      margin: 2px 2px ;
+      padding: 3px 3px ;
+   }
+
+   .delete, 
+   .imposible {
+      font-size: 20px  ;
+   }
+}
+
+
+
+@media screen and (max-width: 600px) {
+   .title {
+      padding: 10px 0 30px 0px ;
+      font-size: 20px ;
+   }
+
+   .container-all {
+      margin: 5px auto;
+      max-width: 98% ;
+      padding: 30px ;
+   }
+
+   .crud-container {
+      max-width: 95% ;
+      margin: auto ;
+      padding: 20px;
+   }
+
+   .btn-add_main {
+      padding: 5px ;
+      font-size: 15px ;
+   }
+   
+   .elementos {
+      padding: 5px ;
+      font-size: 15px ;
+   }
+   
+   .elementos span {
+      font-size: 25px ;
+      padding: 2px 5px ;
+   }
+
+   .titles {
+      max-width: 100%  ;
+      margin: 30px auto 10px ;
+      border-radius: 10px ;
+      padding: 15px 0px ;
+   }
+   
+   .titles h2 {
+      font-size: 10px ;
+      padding: 0 7px ;
+   }
+
+   .nombres {
+      margin: 10px 0 30px  ;
+   }
+
+   .producto {
+      padding: 7px 0px ;
+      margin: 0px auto ;
+      max-width: 100%  ;
+   }
+
+   .producto > * {
+      font-size: 10px ;
+   }
+
+   .options button {
+      margin: 2px 2px ;
+      padding: 2px 2px ;
+   }
+
+   .delete, 
+   .imposible {
+      font-size: 15px  ;
+   }
+}
+
+
